@@ -1,0 +1,119 @@
+.home {
+  /* padding: 20px; */
+}
+
+.page-container {
+  max-width: 100%;
+  /* margin: 0 auto; */
+}
+
+.navbar {
+  background-color: #512da8;
+  height: 50px;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titre-menu {
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+}
+
+.delete-button {
+  font-weight: bold;
+  font-size: 25px; 
+}
+
+.nom_prenom_user {
+  margin-right: 20px;
+  padding-left: 12px;
+  font-size: 25px;
+}
+
+.imageuser {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 50%;
+}
+
+.amplimentation {
+  margin: 40px;
+}
+
+.form-container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.form-container input {
+  flex: 1;
+  margin-right: 10px; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ajouter-employe {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.form-container button {
+  padding: 10px 20px;
+  height: 45px;
+  background-color: #512da8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #512da8;
+}
+
+.table_centre {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ant-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.ant-table th,
+.ant-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.ant-table th {
+  background-color: #f0f0f0;
+}
+
+.ant-table th:first-child,
+.ant-table td:first-child {
+  border-left: none;
+}
+
+.ant-table th:last-child,
+.ant-table td:last-child {
+  border-right: none;
+}
