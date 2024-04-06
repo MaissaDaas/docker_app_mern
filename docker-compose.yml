@@ -5,21 +5,21 @@ services:
     build:
       context: ./backend
     ports:
-      - "5000:5000"
+      - "3001:3001"
     environment:
-      - MONGO_URI=mongodb://mongo_new:27017/devopsdata
+      - MONGO_URI=mongodb://mongodb_new:27017/devopsdata
     depends_on:
       - mongo
-    networks:
-      - mern-network
+
+
 
   frontend:
     build:
       context: ./frontend
     ports:
-      - "4000:3000"
-    networks:
-      - mern-network
+      - "3000:3000"
+
+
 
   mongo:
     image: mongo:latest
@@ -28,11 +28,10 @@ services:
       - "27017:27017"
     volumes:
       - mongo_data:/data/db
-    networks:
-      - mern-network
 
-networks:
-  mern-network:
+
+
+
 
 volumes:
   mongo_data:

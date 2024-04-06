@@ -10,12 +10,12 @@ COPY package.json ./
 # Installer les dépendances
 RUN npm install
 
-ENV PORT 5000
+ENV PORT 3001
 # Copier le reste des fichiers de l'application
 COPY . .
 
 # Exposer le port 3000 du conteneur
-EXPOSE 5000
+EXPOSE 3001
 
 # Commande pour démarrer l'application backend
 CMD ["npm", "start"]

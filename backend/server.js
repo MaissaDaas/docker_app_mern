@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const config = require("config");
 const cors = require("cors");
 const emp = require("./api/emp");
+require('dotenv').config();
 
 // lancer module avec format json
 const app = express();
@@ -11,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 
 // appeler chemin de connexion
-const mongo_url = config.get("mongo_url");
+const mongo_url = process.env.MONGO_URI;
 // lancer des script sur mongoose --> permet l'interraction avec mango
 mongoose.set("strictQuery",true);
 
